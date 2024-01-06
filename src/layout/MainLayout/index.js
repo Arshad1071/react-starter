@@ -1,7 +1,14 @@
 import React from "react";
 
-const index = () => {
-  return <div>index</div>;
+import { Outlet } from "react-router-dom";
+
+const MainLayout = () => {
+  return (
+    <div>
+      <h1>Main Layout</h1>
+      <Outlet />
+    </div>
+  );
 };
 
-export default index;
+export default MainLayout;
